@@ -6119,12 +6119,6 @@
 		(uuid "8dfbe581-d120-4be3-bc47-3f3fd005550f")
 	)
 	(junction
-		(at 165.1 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8e4c9ddb-3e8a-4193-8c13-b59261ea8f32")
-	)
-	(junction
 		(at 130.81 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11363,76 +11357,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 165.1 58.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2b8b9685-bc49-4fab-932b-fc37233bfad6")
-		(property "Reference" "C8"
-			(at 168.91 57.1499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1uF"
-			(at 168.91 59.6899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 166.0652 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 165.1 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 165.1 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ca30ca7e-811c-482f-8e47-91d1c7947e28")
-		)
-		(pin "1"
-			(uuid "d82270b6-f285-430d-93b7-bb517b2da8ab")
-		)
-		(instances
-			(project "VEXBridge"
-				(path "/75715a9c-a502-40d6-b270-e5c0bc6847fe"
-					(reference "C8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:L")
 		(at 214.63 147.32 90)
 		(unit 1)
@@ -15264,72 +15188,6 @@
 			(project "VEXBridge"
 				(path "/75715a9c-a502-40d6-b270-e5c0bc6847fe"
 					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 165.1 62.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a36e8503-03db-443c-8c01-2a25166ea421")
-		(property "Reference" "#PWR09"
-			(at 165.1 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 165.1 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 165.1 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 165.1 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 165.1 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "75d55cff-0d1b-4ccf-81ce-bc17453db6f3")
-		)
-		(instances
-			(project "VEXBridge"
-				(path "/75715a9c-a502-40d6-b270-e5c0bc6847fe"
-					(reference "#PWR09")
 					(unit 1)
 				)
 			)
