@@ -7412,12 +7412,6 @@
 		(uuid "6c00fdea-1428-4330-b8cd-4c938a0b0c25")
 	)
 	(junction
-		(at 182.88 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6f4022de-1f00-4f4c-9a46-5c85922ba17c")
-	)
-	(junction
 		(at 24.13 167.64)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7458,6 +7452,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9b159bcf-3675-4bed-8dcd-623e0b90328a")
+	)
+	(junction
+		(at 182.88 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a43f726e-5817-472d-a127-5db94af9c1ac")
 	)
 	(junction
 		(at 93.98 199.39)
@@ -8009,6 +8009,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 50.8) (xy 182.88 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33ed917c-22a5-4931-95f1-8c511da1601f")
+	)
+	(wire
+		(pts
 			(xy 182.88 170.18) (xy 184.15 170.18)
 		)
 		(stroke
@@ -8509,16 +8519,6 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 43.18) (xy 182.88 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "863846eb-1405-4e95-b87e-844070a82079")
-	)
-	(wire
-		(pts
 			(xy 240.03 95.25) (xy 242.57 95.25)
 		)
 		(stroke
@@ -8886,6 +8886,16 @@
 			(type default)
 		)
 		(uuid "bcc2ca3e-f630-47b5-bc4d-476019a1f322")
+	)
+	(wire
+		(pts
+			(xy 182.88 50.8) (xy 182.88 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcc8f871-d428-4852-8d81-f1dff7c5d333")
 	)
 	(wire
 		(pts
@@ -11644,6 +11654,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 175.26 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0706bf40-f488-45d1-8745-7fe8f25e0f54")
+		(property "Reference" "R32"
+			(at 170.815 45.593 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "900"
+			(at 170.815 48.133 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 173.482 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 175.26 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ce513cdc-559e-4e8b-887b-10de41c2f8eb")
+		)
+		(pin "2"
+			(uuid "05422b54-4b5e-4386-b5c1-9165a0d7a7b1")
+		)
+		(instances
+			(project "VEXBridge"
+				(path "/75715a9c-a502-40d6-b270-e5c0bc6847fe"
+					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 130.81 135.89 0)
 		(unit 1)
@@ -11736,7 +11813,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 234.6452 41.91 0)
 			(effects
 				(font
@@ -12013,7 +12090,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 86.0552 207.01 0)
 			(effects
 				(font
@@ -12488,7 +12565,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 97.4852 39.37 0)
 			(effects
 				(font
@@ -12959,7 +13036,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 183.8452 39.37 0)
 			(effects
 				(font
@@ -13359,7 +13436,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_TS-1088-xR020"
 			(at 313.69 185.42 0)
 			(effects
 				(font
@@ -13561,7 +13638,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 110.1852 39.37 0)
 			(effects
 				(font
@@ -13895,7 +13972,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 256.54 184.15 0)
 			(effects
 				(font
@@ -13972,7 +14049,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 175.895 172.72 0)
 			(effects
 				(font
@@ -14719,7 +14796,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 95.885 146.05 0)
 			(effects
 				(font
@@ -15070,7 +15147,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 268.9352 41.91 0)
 			(effects
 				(font
@@ -15138,7 +15215,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 149.225 172.72 0)
 			(effects
 				(font
@@ -15352,7 +15429,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 175.895 146.05 0)
 			(effects
 				(font
@@ -16106,7 +16183,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 191.4652 39.37 0)
 			(effects
 				(font
@@ -16234,7 +16311,7 @@
 				)
 			)
 		)
-		(property "Value" "24.9k"
+		(property "Value" "24k"
 			(at 170.815 40.513 0)
 			(effects
 				(font
@@ -17052,7 +17129,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 199.0852 39.37 0)
 			(effects
 				(font
@@ -17254,7 +17331,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_TS-1088-xR020"
 			(at 341.63 185.42 0)
 			(effects
 				(font
@@ -17656,7 +17733,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 206.7052 39.37 0)
 			(effects
 				(font
@@ -18372,8 +18449,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "8uH"
-			(at 163.322 29.464 90)
+		(property "Value" "10uH"
+			(at 162.56 29.464 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19065,7 +19142,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 95.885 172.72 0)
 			(effects
 				(font
@@ -19206,7 +19283,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 131.7752 48.26 0)
 			(effects
 				(font
@@ -19340,7 +19417,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 223.52 182.88 0)
 			(effects
 				(font
@@ -19698,7 +19775,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 336.2452 83.82 0)
 			(effects
 				(font
@@ -19943,7 +20020,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 45.4152 78.74 0)
 			(effects
 				(font
@@ -20924,7 +21001,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 122.555 146.05 0)
 			(effects
 				(font
@@ -21267,7 +21344,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 301.9552 189.23 0)
 			(effects
 				(font
@@ -21911,7 +21988,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 348.9452 83.82 0)
 			(effects
 				(font
@@ -21978,7 +22055,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 161.29 26.9748 0)
 			(effects
 				(font
@@ -22310,7 +22387,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 122.555 172.72 0)
 			(effects
 				(font
@@ -22526,7 +22603,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm"
 			(at 236.22 146.05 0)
 			(effects
 				(font
@@ -22664,7 +22741,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 149.225 146.05 0)
 			(effects
 				(font
